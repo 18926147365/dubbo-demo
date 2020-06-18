@@ -1,7 +1,9 @@
 package com.omen.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.omen.service.PayService;
+import org.apache.dubbo.config.annotation.Method;
+import org.apache.dubbo.config.annotation.Service;
+import org.springframework.beans.factory.annotation.Value;
 
 /**
  * @Description:
@@ -11,8 +13,11 @@ import com.omen.service.PayService;
 @Service
 public class PayServiceImpl implements PayService {
 
+    @Value("${server.port}")
+    private String port;
+
     @Override
     public String pay() {
-        return "苹果手机";
+        return "苹果手机"+port;
     }
 }

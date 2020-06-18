@@ -27,8 +27,11 @@
         <!--zookeeper版本-->
         <zookeeper.version>3.4.8</zookeeper.version>
         <zookeeper.client.version>0.7</zookeeper.client.version>
+        <curator.framework.version>4.0.0</curator.framework.version>
+        <curator.recipes.version>4.0.0</curator.recipes.version>
         <!--dubbo版本-->
-        <dubbo.version>2.5.3</dubbo.version>
+        <dubbo.version>2.7.6</dubbo.version>
+
 
     </properties>
 

@@ -9,7 +9,7 @@ import com.omen.service.UserService;
  * @Author: lihaoming
  * @Date: 2020/6/18 8:45
  */
-@Service(interfaceClass = UserService.class)
+@Service
 public class UserServiceImpl implements UserService {
 
     @Override

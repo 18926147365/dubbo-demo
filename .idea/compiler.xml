@@ -6,6 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dubbo-api" />
+        <module name="dubbo-consumer" />
+        <module name="dubbo-pay-provider" />
+        <module name="dubbo-user-provider" />
         <module name="dubboapi" />
         <module name="dubboconsumer" />
         <module name="dubbopayprovider" />
@@ -15,6 +19,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbo-api" options="-parameters" />
+      <module name="dubbo-consumer" options="-parameters" />
+      <module name="dubbo-pay-provider" options="-parameters" />
+      <module name="dubbo-user-provider" options="-parameters" />
       <module name="dubboapi" options="-parameters" />
       <module name="dubboconsumer" options="-parameters" />
       <module name="dubbopayprovider" options="-parameters" />

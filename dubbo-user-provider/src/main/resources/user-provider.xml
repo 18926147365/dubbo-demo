@@ -15,5 +15,6 @@
     <!-- 用dubbo协议在20880端口暴露服务 -->
     <dubbo:protocol name="dubbo" port="${dubbo.server.port}" />
 
-    <dubbo:annotation package="com.omen.service" />
+    <dubbo:provider group ="${dubbo.group.name}" version="${dubbo.version}"/>
+
 </beans>
