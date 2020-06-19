@@ -5,7 +5,6 @@ import com.omen.service.UserService;
 import org.apache.dubbo.config.annotation.Method;
 import org.apache.dubbo.config.annotation.Reference;
 import org.apache.dubbo.config.annotation.Service;
-import org.apache.dubbo.rpc.RpcContext;
 import org.springframework.beans.factory.annotation.Value;
 
 import java.util.concurrent.CompletableFuture;
@@ -15,14 +14,16 @@ import java.util.concurrent.CompletableFuture;
  * @Author: lihaoming
  * @Date: 2020/6/17 18:15
  */
-@Service
+@Service(version = "1.0.0")
 public class PayServiceImpl implements PayService {
 
     @Value("${server.port}")
     private String port;
 
-    @Reference(check = false)
+    @Reference(check = false,version = PayService.VERSION)
     private UserService userService;
+
+
     @Override
     public CompletableFuture<String> pay() {
         // 建议为supplyAsync提供自定义线程池，避免使用JDK公用线程池

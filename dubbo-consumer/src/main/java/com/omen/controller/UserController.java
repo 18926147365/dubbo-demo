@@ -1,9 +1,9 @@
 package com.omen.controller;
 
+import com.omen.config.ResourceConfig;
 import com.omen.service.PayService;
 import com.omen.service.UserService;
 import org.apache.dubbo.config.annotation.Reference;
-import org.apache.dubbo.rpc.RpcContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,12 +18,12 @@ import java.util.concurrent.CompletableFuture;
 @RequestMapping("/user")
 public class UserController {
 
+
     @Reference
     private UserService userService;
 
     @Reference
     private PayService payService;
-
 
 
 

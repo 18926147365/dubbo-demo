@@ -9,7 +9,7 @@ import org.apache.dubbo.config.annotation.Service;
  * @Author: lihaoming
  * @Date: 2020/6/18 8:45
  */
-@Service
+@Service(version = "")
 public class UserServiceImpl implements UserService {
 
     @Override

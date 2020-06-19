@@ -16,12 +16,13 @@
     <dubbo:protocol name="dubbo" port="${dubbo.server.port}"  />
 
     <!--定义服务提供者-->
-    <dubbo:provider  group ="${dubbo.group.name}" filter="gtrace"  version="${dubbo.group.version}"  />
+    <dubbo:provider  group ="${dubbo.group.name}" filter="gtrace"   />
 
     <!--定义服务消费者-->
-    <dubbo:consumer  group ="${dubbo.group.name}"  version="${dubbo.group.version}" />
+    <dubbo:consumer  group ="${dubbo.group.name}"  />
 
-    <dubbo:service interface="com.omen.service.PayService" stub="true"  class="com.omen.service.impl.PayServiceImpl"   group="dev" version="1.0.0">
+
+    <dubbo:service interface="com.omen.service.PayService" version="1.0.0"  stub="true" class="com.omen.service.impl.PayServiceImpl" >
         <dubbo:method name="pay" async="true" timeout="6000" ></dubbo:method>
         <dubbo:method name="pay2" executes="5" ></dubbo:method>
     </dubbo:service>

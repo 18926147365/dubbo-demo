@@ -15,6 +15,6 @@
     <!-- 用dubbo协议在20880端口暴露服务 -->
     <dubbo:protocol name="dubbo" port="${dubbo.server.port}"  />
 
-    <dubbo:provider filter="gtrace" group ="${dubbo.group.name}" version="${dubbo.group.version}"/>
+    <dubbo:provider filter="gtrace" group ="${dubbo.group.name}" />
 
 </beans>
