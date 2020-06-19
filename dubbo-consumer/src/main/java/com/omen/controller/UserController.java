@@ -3,8 +3,11 @@ package com.omen.controller;
 import com.omen.service.PayService;
 import com.omen.service.UserService;
 import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.rpc.RpcContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.concurrent.CompletableFuture;
 
 /**
  * @Description:
@@ -21,8 +24,28 @@ public class UserController {
     @Reference
     private PayService payService;
 
+
+
+
     @RequestMapping("hello")
     public String hello(){
-        return  userService.getName()+"购买了"+payService.pay();
+
+        CompletableFuture<String> helloFuture1 = payService.pay();
+        // 为Future添加回调
+        helloFuture1.whenComplete((retValue, exception) -> {
+            if (exception == null) {
+                System.out.println(retValue);
+            } else {
+                exception.printStackTrace();
+            }
+        });
+        return "123";
     }
+
+    @RequestMapping("hello2")
+    public String hello2(){
+        return payService.pay2("123");
+    }
+
+
 }

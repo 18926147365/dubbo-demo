@@ -11,19 +11,18 @@ import java.util.UUID;
  * @Author: lihaoming
  * @Date: 2020/6/19 11:35
  */
-@Activate(group = {Constants.PROVIDER} )
+@Activate(group = {Constants.CONSUMER} )
 public class GlobalTraceFilter implements Filter {
 
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
-       
         String traceId = invocation.getAttachment("traceId");
         if(!StringUtils.isBlank(traceId)) {
             RpcContext.getContext().setAttachment("traceId",traceId);
         }else {
-            RpcContext.getContext().setAttachment("traceId", UUID.randomUUID().toString());
+            traceId=UUID.randomUUID().toString();
+            RpcContext.getContext().setAttachment("traceId", traceId);
         }
-
         return invoker.invoke(invocation);
     }
 }

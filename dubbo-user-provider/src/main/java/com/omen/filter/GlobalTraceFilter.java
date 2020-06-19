@@ -16,14 +16,13 @@ public class GlobalTraceFilter implements Filter {
 
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
-       
+        System.out.println(invocation.getTargetServiceUniqueName());
         String traceId = invocation.getAttachment("traceId");
         if(!StringUtils.isBlank(traceId)) {
             RpcContext.getContext().setAttachment("traceId",traceId);
         }else {
             RpcContext.getContext().setAttachment("traceId", UUID.randomUUID().toString());
         }
-
         return invoker.invoke(invocation);
     }
 }

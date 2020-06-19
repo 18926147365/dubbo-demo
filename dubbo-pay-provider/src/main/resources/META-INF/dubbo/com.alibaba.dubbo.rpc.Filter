@@ -1,1 +1,1 @@
-gtrace=com.alibaba.dubbo.rpc.filter.GlobalTraceFilter
+gtrace=com.omen.filter.GlobalTraceFilter

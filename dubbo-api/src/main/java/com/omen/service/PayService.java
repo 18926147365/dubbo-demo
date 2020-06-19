@@ -1,6 +1,8 @@
 package com.omen.service;
 
 
+import java.util.concurrent.CompletableFuture;
+
 /**
  * @Description:
  * @Author: lihaoming
@@ -9,5 +11,9 @@ package com.omen.service;
 
 public interface PayService {
 
-     String pay();
+     CompletableFuture<String> pay();
+
+     String pay2(String name);
+
+
 }

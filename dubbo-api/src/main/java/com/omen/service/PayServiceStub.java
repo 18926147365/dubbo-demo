@@ -1,6 +1,6 @@
-package com.omen.service.stub;
+package com.omen.service;
 
-import com.omen.service.PayService;
+import org.apache.commons.lang.StringUtils;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -19,20 +19,21 @@ public class PayServiceStub implements PayService {
 
     @Override
     public CompletableFuture<String> pay() {
-        return pay();
+        return payService.pay();
     }
 
     @Override
     public String pay2(String name) {
-
-        if(name.equals("hello")){
-            return "系统异常";
-        }
-        try {
-            return pay2(name);
-        }catch (Exception e){
-            return "系统异常";
-        }
+       if(StringUtils.isBlank(name)){
+           return "空名称";
+       }
+       try {
+          return payService.pay2(name);
+       }catch (Exception e){
+           e.printStackTrace();
+           System.out.println("系统繁忙");
+           return "系统繁忙";
+       }
 
     }
 }
