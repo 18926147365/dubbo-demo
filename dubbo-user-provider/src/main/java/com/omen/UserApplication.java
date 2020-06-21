@@ -1,5 +1,6 @@
 package com.omen;
 
+import com.omen.utils.PackageUtil;
 import org.apache.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,6 +18,12 @@ import org.springframework.context.annotation.ImportResource;
 public class UserApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserApplication.class,args);
+        try {
+            PackageUtil.scanIDubboService("com.omen.service");
+            SpringApplication.run(UserApplication.class,args);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
     }
 }

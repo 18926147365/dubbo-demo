@@ -12,6 +12,11 @@
     <artifactId>dubbo-api</artifactId>
 
     <dependencies>
-
+        <!--主要为了利用spring ClassPathBeanDefinitionScanner 进行扫包-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>4.1.4.RELEASE</version>
+        </dependency>
     </dependencies>
 </project>

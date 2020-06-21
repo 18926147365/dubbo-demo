@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+  <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-pay-provider" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-user-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-user-provider/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

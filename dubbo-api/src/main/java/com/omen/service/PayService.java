@@ -1,7 +1,7 @@
 package com.omen.service;
 
 
-import com.omen.config.ResourceConfig;
+import com.omen.annotation.IDubboService;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -10,9 +10,10 @@ import java.util.concurrent.CompletableFuture;
  * @Author: lihaoming
  * @Date: 2020/6/17 18:15
  */
-
+@IDubboService()
 public interface PayService{
-     String VERSION ="1.0.0";
+
+    String version ="1.0.9";
 
      CompletableFuture<String> pay();
 

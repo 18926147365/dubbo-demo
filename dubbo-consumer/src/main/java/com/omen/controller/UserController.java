@@ -1,6 +1,5 @@
 package com.omen.controller;
 
-import com.omen.config.ResourceConfig;
 import com.omen.service.PayService;
 import com.omen.service.UserService;
 import org.apache.dubbo.config.annotation.Reference;
@@ -19,10 +18,10 @@ import java.util.concurrent.CompletableFuture;
 public class UserController {
 
 
-    @Reference
+    @Reference(version = UserService.version)
     private UserService userService;
 
-    @Reference
+    @Reference(version=PayService.version)
     private PayService payService;
 
 

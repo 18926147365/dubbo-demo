@@ -13,7 +13,7 @@
     <dubbo:registry protocol="zookeeper"   address="${dubbo.zookeeper.address}" timeout="${dubbo.zookeeper.timeout}" />
 
     <!-- 用dubbo协议在端口暴露服务 -->
-    <dubbo:protocol name="dubbo" port="${dubbo.server.port}"  />
+    <dubbo:protocol name="dubbo" port="${dubbo.protocol.port}"  />
 
     <!--定义服务提供者-->
     <dubbo:provider  group ="${dubbo.group.name}" filter="gtrace"   />
@@ -22,7 +22,7 @@
     <dubbo:consumer  group ="${dubbo.group.name}"  />
 
 
-    <dubbo:service interface="com.omen.service.PayService" version="1.0.0"  stub="true" class="com.omen.service.impl.PayServiceImpl" >
+    <dubbo:service interface="com.omen.service.PayService" version="${PayService.version}"  stub="true" class="com.omen.service.impl.PayServiceImpl" >
         <dubbo:method name="pay" async="true" timeout="6000" ></dubbo:method>
         <dubbo:method name="pay2" executes="5" ></dubbo:method>
     </dubbo:service>
