@@ -3,6 +3,7 @@ package com.omen.controller;
 import com.omen.service.PayService;
 import com.omen.service.UserService;
 import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.rpc.RpcContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -43,6 +44,7 @@ public class UserController {
 
     @RequestMapping("hello2")
     public String hello2(){
+        RpcContext.getContext().setAttachment("names", "123456789");
         return payService.pay2("123");
     }
 

@@ -1,4 +1,4 @@
-package com.omen.filter;
+package com.omen.spi;
 import com.alibaba.dubbo.common.Constants;
 import org.apache.commons.lang.StringUtils;
 import org.apache.dubbo.common.extension.Activate;
@@ -11,8 +11,8 @@ import java.util.UUID;
  * @Author: lihaoming
  * @Date: 2020/6/19 11:35
  */
-@Activate(group = {Constants.CONSUMER} )
-public class GlobalTraceFilter implements Filter {
+@Activate(group = {Constants.CONSUMER, Constants.PROVIDER} )
+public class IDubboFilter implements Filter {
 
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
@@ -23,6 +23,7 @@ public class GlobalTraceFilter implements Filter {
             traceId=UUID.randomUUID().toString();
             RpcContext.getContext().setAttachment("traceId", traceId);
         }
+        System.out.println("2-"+traceId);
         return invoker.invoke(invocation);
     }
 }

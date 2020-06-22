@@ -24,6 +24,5 @@ public class UserApplication {
         }catch (Exception e){
             e.printStackTrace();
         }
-
     }
 }

@@ -16,6 +16,8 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.*;
 
 /**
@@ -27,8 +29,6 @@ public class PackageUtil {
     //扫描  scanPackages 下的文件的匹配符
     protected static final String DEFAULT_RESOURCE_PATTERN = "**/*.class";
     private final static Log log = LogFactory.getLog(PackageUtil.class);
-
-
 
 
     /**
@@ -213,6 +213,13 @@ public class PackageUtil {
         for (String key: vSet) {
             System.setProperty(key,versionMap.get(key));
         }
+
+
+
+
+
+
+
     }
 
 

@@ -1,5 +1,6 @@
 package com.omen.model;
 
+import com.omen.service.PayService;
 import lombok.Data;
 
 /**
@@ -11,4 +12,5 @@ import lombok.Data;
 public class TraceLog {
 
     private String traceId;
+
 }

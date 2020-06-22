@@ -26,6 +26,7 @@ public class GlobalTraceFilter implements Filter {
         }else {
             RpcContext.getContext().setAttachment("traceId", UUID.randomUUID().toString());
         }
+        System.out.println(traceId);
         return invoker.invoke(invocation);
     }
 }

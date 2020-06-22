@@ -13,7 +13,7 @@ import java.util.concurrent.CompletableFuture;
 @IDubboService()
 public interface PayService{
 
-    String version ="1.0.9";
+    String version ="1.0.11";
 
      CompletableFuture<String> pay();
 
