@@ -14,4 +14,7 @@ public class SystemConst {
     //cookie值
     public static final String COOKIE_ROUTE_TOKEN="route_token";
 
+
+    //redis
+    public static final String REDIS_ROUTE_RULE="system:routeRule";
 }
