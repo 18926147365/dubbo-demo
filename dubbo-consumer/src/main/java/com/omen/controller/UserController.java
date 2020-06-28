@@ -25,10 +25,10 @@ import java.util.concurrent.CompletableFuture;
 public class UserController {
 
 
-    @Reference(version = UserService.version)
+    @Reference
     private UserService userService;
 
-    @Reference(version=PayService.version)
+    @Reference
     private PayService payService;
 
 

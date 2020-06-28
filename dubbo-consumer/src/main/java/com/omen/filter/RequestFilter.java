@@ -28,18 +28,6 @@ public class RequestFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-
-
-        RpcContext.getContext().setAttachment("traceId","123456789123456789");
-        HttpServletRequest request= (HttpServletRequest) servletRequest;
-
-        RequestModel rqModel=new RequestModel();
-        rqModel.setIp(getIpAddress(request));
-        rqModel.setRouteToken(getCookie(request,SystemConst.COOKIE_ROUTE_TOKEN));
-        rqModel.setUid(request.getSession().getId());
-        RpcContext.getContext().setAttachment(SystemConst.REQUEST_MODEL,rqModel);
-
-
         filterChain.doFilter(servletRequest,servletResponse);
     }
 

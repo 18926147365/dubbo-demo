@@ -14,13 +14,13 @@ import java.util.concurrent.CompletableFuture;
  * @Author: lihaoming
  * @Date: 2020/6/17 18:15
  */
-@Service(version = PayService.version)
+@Service
 public class PayServiceImpl implements PayService {
 
     @Value("${server.port}")
     private String port;
 
-    @Reference(check = false,version = UserService.version)
+    @Reference(check = false)
     private UserService userService;
 
 
