@@ -10,19 +10,18 @@
     <dubbo:application name="${dubbo.application.name}" />
 
     <!-- 使用zookeeper注册中心暴露服务地址 -->
-    <dubbo:registry protocol="zookeeper"    address="${dubbo.zookeeper.address}" timeout="${dubbo.zookeeper.timeout}" />
+    <dubbo:registry protocol="zookeeper"     address="${dubbo.zookeeper.address}" timeout="${dubbo.zookeeper.timeout}" />
 
 
     <!--定义服务提供者-->
-    <dubbo:provider  group ="${dubbo.group.name}"   version="${dubbo.group.version}"/>
+    <dubbo:provider  group ="${dubbo.group.name}"  listener="ls"   version="${dubbo.group.version}"/>
 
     <!--定义服务消费者-->
-    <dubbo:consumer  group ="${dubbo.group.name}"  version="${dubbo.group.version}"/>
+    <dubbo:consumer  group ="${dubbo.group.name}"   version="${dubbo.group.version}"/>
 
 
-    <!--<dubbo:service interface="com.omen.service.PayService" loadbalance="iloadbalance" version="${PayService.version}"  stub="true" class="com.omen.service.impl.PayServiceImpl" >-->
-        <!--<dubbo:method name="pay" async="true" timeout="6000" ></dubbo:method>-->
-        <!--<dubbo:method name="pay2" executes="5" ></dubbo:method>-->
+    <!--<dubbo:service interface="com.omen.service.PayService" version="${dubbo.group.version}"  class="com.omen.service.impl.PayServiceImpl" >-->
+        <!--<dubbo:method name="pay2"  cache="myCache"  ></dubbo:method>-->
     <!--</dubbo:service>-->
 
 

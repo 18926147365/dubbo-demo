@@ -40,7 +40,7 @@ public class PayServiceImpl implements PayService {
 
     @Override
     public String pay2(String name) {
-        String names=userService.getName();
-        return  "123"+names;
+        System.out.println("pay2方法被调用了："+name);
+        return  "123888888888888";
     }
 }

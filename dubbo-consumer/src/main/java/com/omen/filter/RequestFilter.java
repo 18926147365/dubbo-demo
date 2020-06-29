@@ -1,7 +1,6 @@
 package com.omen.filter;
 
 import com.omen.constant.SystemConst;
-import com.omen.model.RequestModel;
 import org.apache.commons.lang.StringUtils;
 import org.apache.dubbo.rpc.RpcContext;
 
