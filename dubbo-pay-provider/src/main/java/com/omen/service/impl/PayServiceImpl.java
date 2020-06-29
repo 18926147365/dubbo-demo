@@ -1,12 +1,17 @@
 package com.omen.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
+import com.omen.entity.User;
+import com.omen.mapper.UserMapper;
 import com.omen.service.PayService;
 import com.omen.service.UserService;
 import org.apache.dubbo.config.annotation.Method;
 import org.apache.dubbo.config.annotation.Reference;
 import org.apache.dubbo.config.annotation.Service;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 /**
@@ -23,6 +28,8 @@ public class PayServiceImpl implements PayService {
     @Reference(check = false)
     private UserService userService;
 
+    @Autowired
+    private UserMapper userMapper;
 
     @Override
     public CompletableFuture<String> pay() {
@@ -40,7 +47,8 @@ public class PayServiceImpl implements PayService {
 
     @Override
     public String pay2(String name) {
-        String names=userService.getName();
-        return  "123"+names;
+        List<User> list=userMapper.queryAll();
+
+        return  "123"+ JSONObject.toJSONString(list);
     }
 }

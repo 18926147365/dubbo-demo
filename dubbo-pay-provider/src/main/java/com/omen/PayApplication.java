@@ -1,6 +1,7 @@
 package com.omen;
 
 import org.apache.dubbo.config.spring.context.annotation.DubboComponentScan;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
@@ -14,6 +15,7 @@ import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication()
 @ImportResource(locations={"classpath:pay-provider.xml"})
 @DubboComponentScan(basePackages = "com.omen.service")
+@MapperScan("com.omen.mapper")
 public class PayApplication{
 
     public static void main(String[] args)  {
