@@ -1,17 +1,11 @@
 package com.omen.filter;
 
-import com.omen.constant.SystemConst;
-import com.omen.model.RequestModel;
-import org.apache.commons.lang.StringUtils;
-import org.apache.dubbo.rpc.RpcContext;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.UUID;
 
 /**
  * @Description:
