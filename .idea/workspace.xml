@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209897a7-f5a0-4906-b957-19bab90e6b93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application-redis.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/constant/SystemConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/constant/SystemConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/RouteConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/RouteRuleConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/service/PayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/service/PayService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/spi/IDubboLoadBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/spi/IDubboLoadBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-pay-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-pay-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/PayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/PayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/service/impl/PayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/service/impl/PayServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/pay-provider.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/pay-provider.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -34,31 +33,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/spi/IDubboLoadBalance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="58" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/pay-provider.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+            <state relative-caret-position="34">
+              <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/service/impl/PayServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application-redis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="249">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -66,64 +62,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/RouteRuleConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="202">
+              <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1591#1592#0" expanded="true" />
+                <element signature="e#1673#1674#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/utils/RedisUtil.java">
+        <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/service/PayService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-api/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="159">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/constant/SystemConst.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="47" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -135,6 +88,7 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -167,9 +121,6 @@
         <option value="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/const/Constant.kt" />
         <option value="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/constant/BaseConst.java" />
         <option value="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/RequestModel.java" />
-        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/filter/RequestFilter.java" />
-        <option value="$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/pay-provider.xml" />
-        <option value="$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/spi/IDubboLoadBalance.java" />
         <option value="$PROJECT_DIR$/dubbo-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/config/RedisConfig.java" />
@@ -177,10 +128,19 @@
         <option value="$PROJECT_DIR$/dubbo-api/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/utils/RedisUtil.java" />
         <option value="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/constant/SystemConst.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/controller/UserController.java" />
         <option value="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/RouteConfig.java" />
         <option value="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/RouteRuleConfig.java" />
+        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/filter/RequestFilter.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/META-INF/spring/application-redis.xml" />
+        <option value="$PROJECT_DIR$/dubbo-pay-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/PayApplication.java" />
+        <option value="$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application-redis.xml" />
+        <option value="$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/pay-provider.xml" />
+        <option value="$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/service/PayService.java" />
+        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/service/impl/PayServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -209,7 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -266,39 +225,6 @@
             <path>
               <item name="dubbo-simple-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-simple-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="omen" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-simple-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-simple-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="omen" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-simple-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-simple-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="omen" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-simple-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-simple-demo" type="462c0819:PsiDirectoryNode" />
               <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -340,6 +266,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="omen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-simple-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-simple-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="omen" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-simple-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -414,7 +351,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="omen" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-simple-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-simple-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-pay-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="omen" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-simple-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -424,14 +373,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dubbo-simple-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,15 +388,19 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592877223615" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593484489113" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.4275862" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\work\dubbo-simple-demo\dubbo-consumer\src\main\resources\META-INF\dubbo\internal" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\dubbo-simple-demo\dubbo-pay-provider\src\main\resources" />
+      <recent name="D:\work\dubbo-simple-demo\dubbo-consumer\src\main\resources\META-INF\dubbo" />
+      <recent name="D:\work\dubbo-simple-demo\dubbo-pay-provider\src\main\resources\META-INF\dubbo" />
+      <recent name="D:\work\dubbo-simple-demo\.idea" />
+      <recent name="D:\work\dubbo-simple-demo\dubbo-api\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.omen.spi" />
@@ -459,12 +409,8 @@
       <recent name="com.omen" />
       <recent name="com.omen.filter" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\dubbo-simple-demo\dubbo-consumer\src\main\resources\META-INF\dubbo" />
-      <recent name="D:\work\dubbo-simple-demo\dubbo-pay-provider\src\main\resources\META-INF\dubbo" />
-      <recent name="D:\work\dubbo-simple-demo\.idea" />
-      <recent name="D:\work\dubbo-simple-demo\dubbo-api\src\main" />
-      <recent name="D:\work\dubbo-simple-demo\dubbo-pay-provider\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\dubbo-simple-demo\dubbo-consumer\src\main\resources\META-INF\dubbo\internal" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -479,7 +425,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.pay-02">
+  <component name="RunManager" selected="Spring Boot.pay-01">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="dubbo-consumer" />
       <extension name="coverage">
@@ -539,8 +485,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="Spring Boot.user-01" />
         <item itemvalue="Spring Boot.pay-01" />
+        <item itemvalue="Spring Boot.user-01" />
       </list>
     </recent_temporary>
   </component>
@@ -573,11 +519,12 @@
       <workItem from="1592818352603" duration="3466000" />
       <workItem from="1592872274744" duration="4174000" />
       <workItem from="1592876482876" duration="739000" />
+      <workItem from="1593477472629" duration="6951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22690000" />
+    <option name="totallyTimeSpent" value="36316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,7 +539,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29727685" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26626325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -603,7 +550,42 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294893" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.35914332" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.48105437" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" visible="true" weight="0.29818782" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294893" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3294893" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.42833608" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3294893" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49924356" weight="0.4645799" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.31316188" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39409986" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294893" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.35914332" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" visible="true" weight="0.30313015" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294893" />
@@ -625,7 +607,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -725,72 +707,9 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.cluster.LoadBalance" />
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/filter/GlobalTraceFilter.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.6/dubbo-2.7.6.jar!/org/apache/dubbo/common/constants/CommonConstants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.16/log4j-1.2.16.jar!/org/apache/log4j/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar!/org/slf4j/LoggerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources/META-INF/dubbo/internal/org.apache.dubbo.rpc.cluster.LoadBalance" />
-    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.cluster.LoadBalance">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/filter/GlobalTraceFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" />
     <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.Filter" />
-    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/service/impl/PayServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/service/PayService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/spi/IDubboLoadBalance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/spi/IDubboLoadBalance.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.6/dubbo-2.7.6.jar!/com/alibaba/dubbo/rpc/cluster/LoadBalance.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
@@ -806,20 +725,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.cluster.LoadBalance">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.cluster.LoadBalance" />
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.6/dubbo-2.7.6.jar!/org/apache/dubbo/rpc/Result.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1000">
@@ -841,16 +748,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/spi/IDubboFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/spi/IDubboFilter.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.6/dubbo-2.7.6.jar!/org/apache/dubbo/rpc/cluster/loadbalance/AbstractLoadBalance.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -881,13 +779,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/TraceLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/TraceLog.java" />
     <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/annotation/IDubboService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -909,37 +801,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/RequestModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/utils/PackageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/RequestModel.java" />
+    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/utils/PackageUtil.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.6/dubbo-2.7.6.jar!/META-INF/compat/dubbo.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
           <caret line="1546" column="4" selection-start-line="1546" selection-start-column="4" selection-end-line="1546" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/filter/RequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -950,20 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
-          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources/consumer.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -971,50 +824,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/config/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#439#454#1" expanded="true" />
-            <element signature="e#493#508#1" expanded="true" />
-            <element signature="e#544#562#1" expanded="true" />
-            <element signature="e#601#619#1" expanded="true" />
-            <element signature="e#658#682#1" expanded="true" />
-            <element signature="e#727#756#1" expanded="true" />
-            <element signature="e#840#861#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/spi/IDubboLoadBalance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="58" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/pay-provider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/spi/IDubboLoadBalance.java" />
     <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/utils/RedisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1032,13 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/constant/SystemConst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1046,20 +849,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/RouteRuleConfig.java" />
+    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/mapper/UserMapper.java" />
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/filter/RequestFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/model/RouteRuleConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="-475">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/META-INF/spring/application-redis.xml" />
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" selection-start-line="11" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="65" column="21" selection-start-line="57" selection-start-column="7" selection-end-line="65" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.7.0/redisson-3.7.0.jar!/org/redisson/api/RedissonClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/PayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="14" column="88" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.7.0/redisson-3.7.0.jar!/org/redisson/api/RLock.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.7.0/redisson-3.7.0.jar!/org/redisson/RedissonLock.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="298" selection-start-line="298" selection-end-line="298" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.7.0/redisson-3.7.0.jar!/org/redisson/Redisson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="264" column="20" selection-start-line="264" selection-start-column="20" selection-end-line="264" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/application-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/omen/service/PayService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/resources/pay-provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/omen/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+          <folding>
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-pay-provider/src/main/java/com/omen/service/impl/PayServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>

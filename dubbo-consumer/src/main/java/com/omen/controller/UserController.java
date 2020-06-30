@@ -25,7 +25,7 @@ import java.util.concurrent.CompletableFuture;
 public class UserController {
 
 
-    @Reference
+    @Reference(check = false)
     private UserService userService;
 
     @Reference
@@ -52,13 +52,23 @@ public class UserController {
 
     @RequestMapping("hello2")
     public String hello2(){
-        RpcContext.getContext().setAttachment("names", "123456789");
-        redisUtil.set(SystemConst.REDIS_ROUTE_RULE,"123");
-        return payService.pay2("123");
+        for(int i=0;i<10;i++){
+            final int k=i;
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println(payService.pay2("123"));
+                }
+            }).start();
+
+        }
+
+        return "123";
     }
 
     @RequestMapping("hello3")
     public void hello3(){
+
 
     }
 }

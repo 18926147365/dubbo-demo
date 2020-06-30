@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ImportResource;
  * @Date: 2020/6/17 16:55
  */
 @SpringBootApplication()
-@ImportResource(locations={"classpath:pay-provider.xml"})
+@ImportResource(locations={"classpath:pay-provider.xml","classpath:application-redis.xml"})
 @DubboComponentScan(basePackages = "com.omen.service")
 public class PayApplication{
 

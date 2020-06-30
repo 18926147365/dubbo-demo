@@ -14,7 +14,7 @@
 
 
     <!--定义服务提供者-->
-    <dubbo:provider  group ="${dubbo.group.name}"   version="${dubbo.group.version}"/>
+    <dubbo:provider  group ="${dubbo.group.name}" timeout="10000"   version="${dubbo.group.version}"/>
 
     <!--定义服务消费者-->
     <dubbo:consumer  group ="${dubbo.group.name}"  version="${dubbo.group.version}"/>
