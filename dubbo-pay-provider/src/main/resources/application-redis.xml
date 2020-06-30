@@ -26,7 +26,7 @@
     </bean>
 
     <!--redisson配置的实例    单台redis机器配置    -->
-    <redisson:client id="redissonClient">
+    <redisson:client id="redisson">
         <redisson:single-server    />
     </redisson:client>
 
