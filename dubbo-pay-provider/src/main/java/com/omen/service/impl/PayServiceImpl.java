@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -93,13 +94,67 @@ public class PayServiceImpl implements PayService {
                 }
             }).start();
         }
-
-
-
-
         return index;
     }
+    @Override
+    public String rCountDownLath(String index) {
 
+        RCountDownLatch rCountDownLatch=redisson.getCountDownLatch("test:countDownLath");
+        rCountDownLatch.trySetCount(3);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                test1();
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                test2();
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                test3();
+            }
+        }).start();
+        try {
+            rCountDownLatch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "完成";
+    }
 
-
+    private void test1(){
+        RCountDownLatch rCountDownLatch=redisson.getCountDownLatch("test:countDownLath");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("业务1完成");
+        rCountDownLatch.countDown();
+    }
+    private void test2(){
+        RCountDownLatch rCountDownLatch=redisson.getCountDownLatch("test:countDownLath");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("业务2完成");
+        rCountDownLatch.countDown();
+    }
+    private void test3(){
+        RCountDownLatch rCountDownLatch=redisson.getCountDownLatch("test:countDownLath");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("业务3完成");
+        rCountDownLatch.countDown();
+    }
 }

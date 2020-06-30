@@ -21,4 +21,6 @@ public interface PayService{
 
      String rateLimiter(String index);
 
+     String rCountDownLath(String index);
+
 }

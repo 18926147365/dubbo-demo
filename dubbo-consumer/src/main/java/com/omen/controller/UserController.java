@@ -67,18 +67,7 @@ public class UserController {
     }
 
     @RequestMapping("hello3")
-    public void hello3(){
-        for(int i=0;i<3;i++){
-            final int k=i;
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                   String str= payService.rateLimiter(k+"");
-                }
-            }).start();
-        }
-
-
-
+    public String hello3(){
+        return payService.rCountDownLath("1");
     }
 }
