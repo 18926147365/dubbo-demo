@@ -13,7 +13,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Description:
@@ -37,34 +39,37 @@ public class IDubboLoadBalance extends AbstractLoadBalance {
 
     @Override
     protected <T> Invoker<T> doSelect(List<Invoker<T>> invokers, URL url, Invocation invocation) {
-        List<Invoker<T>> newInvokers=new ArrayList<>();
+        //筛选出灰度节点和正常节点
+        List<Invoker<T>> newInvokers=new ArrayList<>();//正常节点
+        Map<String,List<Invoker<T>>> grayInvokersMap=new HashMap<>();//灰度节点
         for(int i=0;i<invokers.size();i++){
             URL iurl= invokers.get(i).getUrl();
-            String host=iurl.getHost();
-            int port=iurl.getPort();
+            //只有灰度节点才有routeToken,生产节点为空
             String routeToken=iurl.getParameter("routeToken");
             if(StringUtils.isBlank(routeToken)){
                 newInvokers.add(invokers.get(i));
+            }else{
+                List<Invoker<T>> grayList=grayInvokersMap.get(routeToken);
+                if(grayList==null || grayList.size()==0){
+                    grayList=new ArrayList<>();
+                }
+                grayList.add(invokers.get(i));
+                grayInvokersMap.put(routeToken,grayList);
             }
-
-
-
-
-
         }
+
 
         RequestModel rqModel= (RequestModel) RpcContext.getContext().getObjectAttachment(SystemConst.REQUEST_MODEL);
-        if(rqModel!=null){
-//            System.out.println("ip:"+rqModel.getIp());
-//            System.out.println("router_token:"+rqModel.getRouteToken());
+        if(rqModel!=null && StringUtils.isNotBlank(rqModel.getRouteToken())){
+            //走灰度节点
+            List<Invoker<T>> list= grayInvokersMap.get(rqModel.getRouteToken());
+            //若灰度节点未找到，则还是走回正常节点
+            if(list!=null && list.size()!=0){
+                return getRoundRobinLoadBalance().select(list,url,invocation);
+            }
         }
+        return getRoundRobinLoadBalance().select(newInvokers,url,invocation);
 
-        //灰度发布 场景A 上线灰度节点后，让特定带特殊标识符参数的用户走灰度节点
-
-
-        //灰度发布 场景B 上线灰度节点后，让部分用户进行走灰度节点
-
-        return getRoundRobinLoadBalance().select(invokers,url,invocation);
     }
 
 
