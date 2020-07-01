@@ -18,10 +18,10 @@
     </dubbo:protocol>
 
     <!--定义服务提供者-->
-    <dubbo:provider  group ="${dubbo.group.name}" filter="gtrace" loadbalance="iloadbalance"    />
+    <dubbo:provider   group ="${dubbo.group.name}" filter="gtrace" loadbalance="iloadbalance"    />
 
     <!--定义服务消费者-->
-    <dubbo:consumer  group ="${dubbo.group.name}"   />
+    <dubbo:consumer   group ="${dubbo.group.name}"    />
 
 
     <!--<dubbo:service interface="com.omen.service.PayService" loadbalance="iloadbalance" version="${PayService.version}"  stub="true" class="com.omen.service.impl.PayServiceImpl" >-->

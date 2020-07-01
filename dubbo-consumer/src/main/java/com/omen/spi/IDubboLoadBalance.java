@@ -46,7 +46,7 @@ public class IDubboLoadBalance extends AbstractLoadBalance {
             URL iurl= invokers.get(i).getUrl();
             //只有灰度节点才有routeToken,生产节点为空
             String routeToken=iurl.getParameter("routeToken");
-            if(StringUtils.isBlank(routeToken)){
+            if(StringUtils.isBlank(routeToken) || "0".equals(routeToken)){
                 newInvokers.add(invokers.get(i));
             }else{
                 List<Invoker<T>> grayList=grayInvokersMap.get(routeToken);
